@@ -1,0 +1,14 @@
+# @see https://github.com/Sylius/SyliusResourceBundle/blob/master/docs/index.md
+sylius_resource:
+    resources:
+        yac_dev_sylius_product_badge_plugin.product_badge:
+            driver: doctrine/orm
+            classes:
+                model: YacDev\SyliusProductBadgePlugin\Entity\ProductBadge
+                interface: YacDev\SyliusProductBadgePlugin\Entity\ProductBadgeInterface
+                repository: YacDev\SyliusProductBadgePlugin\Repository\ProductBadgeRepository
+            translation:
+                classes:
+                    model: YacDev\SyliusProductBadgePlugin\Entity\ProductBadgeTranslation
+                    interface: YacDev\SyliusProductBadgePlugin\Entity\ProductBadgeTranslationInterface
+                    repository: YacDev\SyliusProductBadgePlugin\Repository\ProductBadgeTranslationRepository

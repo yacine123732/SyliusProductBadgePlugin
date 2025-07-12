@@ -1,0 +1,3 @@
+yac_dev_sylius_product_badge_admin:
+    resource: "admin_routing.yaml"
+    prefix: /admin

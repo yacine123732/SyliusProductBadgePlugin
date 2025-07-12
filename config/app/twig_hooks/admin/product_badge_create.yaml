@@ -1,0 +1,35 @@
+sylius_twig_hooks:
+    hooks:
+        'sylius_admin.product_badge.create.content':
+            form:
+                component: 'yacdev:product_badge:form'
+                props:
+                    resource: '@=_context.resource'
+                    form: '@=_context.form'
+                    template: '@YacDevSyliusProductBadgePlugin/admin/product_badge/form.html.twig'
+                priority: 0
+
+        'sylius_admin.product_badge.create.content.form':
+            sections:
+                template: '@YacDevSyliusProductBadgePlugin/admin/product_badge/form/sections.html.twig'
+                priority: 0
+
+        'sylius_admin.product_badge.create.content.form.sections':
+            general:
+                template: '@YacDevSyliusProductBadgePlugin/admin/product_badge/form/sections/general.html.twig'
+                priority: 200
+            translations:
+                template: '@YacDevSyliusProductBadgePlugin/admin/product_badge/form/sections/translations.html.twig'
+                priority: 100
+                
+        'sylius_admin.product_badge.create.content.form.sections.general':
+            default:
+                enabled: false
+            css_class:
+                template: '@YacDevSyliusProductBadgePlugin/admin/product_badge/form/sections/general/css_class.html.twig'
+                priority: 100
+                
+        'sylius_admin.product_badge.create.content.form.sections.translations':
+            name:
+                template: '@YacDevSyliusProductBadgePlugin/admin/product_badge/form/sections/translations/name.html.twig'
+                priority: 0

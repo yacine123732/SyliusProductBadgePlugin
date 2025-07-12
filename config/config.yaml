@@ -1,0 +1,8 @@
+imports:
+    - { resource: "resources/product_badge.yaml" }
+    - { resource: "grids/product_badge.yaml" }
+    - { resource: "app/twig_hooks/admin/product_badge_update.yaml" }
+    - { resource: "app/twig_hooks/admin/product_badge_create.yaml" }
+    - { resource: "app/twig_hooks/admin/product_update.yaml" }
+    - { resource: "app/twig_hooks/admin/product_create.yaml" }
+    - { resource: "yac_dev_sylius_product_badge.yaml" }
