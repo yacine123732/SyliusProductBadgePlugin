@@ -1,4 +1,7 @@
 # Put your Behat suites definitions here
 
+imports:
+    - suites/ui/product_badge.yml
+
 default:
     suites: ~
